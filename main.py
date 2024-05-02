@@ -1,9 +1,5 @@
-import os
-from dotenv import load_dotenv
 import streamlit as st
 from model import Gem_Bookish,MessageContent
-_bool = load_dotenv()
-
 
 
 st.title("BookisH--your smart reading assistant!")

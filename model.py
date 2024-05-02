@@ -1,8 +1,10 @@
 import os
+from typing import Any
 from dotenv import load_dotenv
 import google.generativeai as genai
-from typing import Any
 
+
+##Loading the api key from the .env file
 api_key = os.getenv("GOOGLE_API_KEY")
 #print(api_key)
 
