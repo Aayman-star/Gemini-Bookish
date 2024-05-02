@@ -4,7 +4,7 @@ import google.generativeai as genai
 from typing import Any
 
 api_key = os.getenv("GOOGLE_API_KEY")
-print(api_key)
+#print(api_key)
 
 genai.configure()
 
@@ -63,6 +63,7 @@ class Gem_Bookish:
             self.add_message(MessageContent( role ="user",msgstring=prompt))
         
     def get_answer(self)->MessageContent:
+        """Decoding the location of the response given by gemini"""
         response = self.convo.history[1].parts[0].text
         print("Response: ", response)
         answer = (MessageContent( role ="model",msgstring=response))
