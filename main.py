@@ -24,8 +24,6 @@ if prompt := st.chat_input("Say something..."):
          st.session_state.gemini_assistant.chat_gemini(prompt) ##user question being passed to the models
         
  
-       
-   
     with st.spinner('Searching for answer'):
        
          response  = st.session_state.gemini_assistant.get_answer() ##response from the model
@@ -33,10 +31,3 @@ if prompt := st.chat_input("Say something..."):
     with st.chat_message("assistant"):
         st.markdown(response)
                       
-
-
-   
-
-
-
-    
